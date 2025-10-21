@@ -1,10 +1,12 @@
 /* eslint-disable no-param-reassign */
 const clearArr = (arr) => {
-  arr = [];
+  while(arr.length>0){
+    arr.pop();
+  }
 };
 
 const getFirstItem = (array) => {
-  return array.shift();
+  return array[0];
 };
 
 module.exports = {
